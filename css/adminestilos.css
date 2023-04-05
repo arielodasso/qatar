@@ -1,0 +1,291 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Qatar2022;
+}
+
+body{
+    background: rgb(159,14,53);
+    background: linear-gradient(52deg, rgba(159,14,53,1) 0%, rgba(70,2,24,1) 100%);
+    background-size: cover;
+    color: #fff;
+}
+header{
+    display: flex;
+}
+    header .titulo-web{
+        display: flex;
+        margin: 20px;
+    }
+        header .titulo-web img{
+            height: 200px;
+            vertical-align: middle;
+        }
+        header .titulo-web h1{
+            font-size: 35px;
+            margin-top: 50px;
+            max-width: 50%;
+            line-height: 40px;
+        }
+            header .titulo-web span{
+                font-size: 45px;
+            }
+            header .titulo-web h1 a{
+                text-decoration: none;
+                color: #fff;
+            }
+
+    header .menu{
+        display: flex;
+        margin-top: 50px;
+        margin-right: 70px;
+        width: 70%;
+    }
+        header .menu ul{
+            display: flex;
+            text-decoration: none;
+            list-style: none;
+            
+        }
+
+        header .menu ul li{
+            text-decoration: none;
+            color: #fff;
+            font-size: 25px;
+            margin-top: 30px;
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+            header .menu ul li a{
+                text-decoration: none;
+            }
+
+a{
+    text-decoration: none;
+}
+
+
+.cuadradito{
+    background-color: rgba(159,14,53,1);
+    height: 20px;
+    width: 20px;
+    margin-top: 37px;
+    margin-right: 10px;
+    margin-left: 10px;
+    display: flex;
+    transform: rotate(45deg);
+}
+
+    .main-login{
+        display: flex;
+        align-items: center;
+        margin-top: 50px;
+        padding-left: 80px;
+        padding-right: 80px;
+        margin-bottom: 100px;
+    }
+        .main-login .mensaje-bienvenida{
+            width: 40%;
+        }
+            .main-login .mensaje-bienvenida h1{
+                font-size: 50px;
+            }
+                .main-login .mensaje-bienvenida h1 span{
+                    display: block;
+                    margin-top: -20px;
+                }
+        .main-login .formulario-acceso{
+            width: 60%;
+            padding: 30px;
+            background: rgba(70,2,24,1);
+            background: linear-gradient(52deg, rgb(99, 5, 35) 0%, rgb(76, 5, 28) 100%);
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+            .main-login .formulario-acceso form label{
+                display: block;
+                font-size: 30px;
+                margin-bottom: -20px;
+            }
+            .main-login .formulario-acceso form input{
+                margin-bottom: 40px;
+                padding: 10px;
+            }
+            .main-login .formulario-acceso form button{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 150px;
+                padding-top: 7px;
+                padding-bottom: 7px;
+                color: #fff;
+                border: none;
+                background-color: rgb(159,14,53);
+            }
+
+    .main-bienvenida{
+        height: 350px;
+    }
+
+/* ESTILOS DE LA SECCIÓN DE REDACCIÓN */
+.main-admin-noticias{
+    display: block;
+    height: auto;
+}
+.main-admin-noticias .cont-datos-noticias{
+    margin-left: 70px;
+    margin-top: 50px;
+}
+    .main-admin-noticias .cont-datos-noticias h2{
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+    .main-admin-noticias .cont-datos-noticias .form-edicion-noticia{
+        display: flex;
+        width: auto;
+        margin-bottom: 50px;
+        margin-right: 50px;
+        background: rgba(70,2,24,1);
+        background: linear-gradient(52deg, rgb(99, 5, 35) 0%, rgb(76, 5, 28) 100%);
+        border-radius: 10px;
+    }
+    .main-admin-noticias .cont-datos-noticias .form-edicion-noticia .form-izq, .main-admin-noticias .cont-datos-noticias .form-edicion-noticia .form-der{
+        width: 70%;
+        display: block;
+        padding: 30px;
+    }
+    .main-admin-noticias .cont-datos-noticias .form-edicion-noticia .form-der{
+        width: 30%;
+        margin-right: 50px;
+    }
+        .main-admin-noticias .cont-datos-noticias .form-edicion-noticia .form-izq input, .main-admin-noticias .cont-datos-noticias .form-edicion-noticia .form-izq textarea{
+            display: block;
+            width: 100%;
+            padding-left: 10px;
+            font-family: 'Poppins', sans-serif;
+        }
+            .main-admin-noticias .cont-datos-noticias .form-edicion-noticia .form-izq .titulo-not{
+                margin-bottom: 15px;
+                height: 40px;
+            }
+            .main-admin-noticias .cont-datos-noticias .form-edicion-noticia .form-izq .subtitulo-not{
+                margin-bottom: 40px;
+                height: 30px;
+            }
+            .main-admin-noticias .cont-datos-noticias .form-edicion-noticia .form-izq .descripcion-not{
+                height: 200px;
+                font-family: 'Poppins', sans-serif;
+                padding-top: 10px;
+                resize: none;
+            }
+                .main-admin-noticias .cont-datos-noticias .form-edicion-noticia .form-izq .descripcion-not::placeholder{
+                    float: left;
+                  }
+        .main-admin-noticias .cont-datos-noticias .form-edicion-noticia .form-der input{
+            width: 100%;
+        }
+            .main-admin-noticias .cont-datos-noticias .form-edicion-noticia .form-der .fecha-not{
+                height: 40px;
+                margin-bottom: 15px;
+            }
+            .main-admin-noticias .cont-datos-noticias .form-edicion-noticia .form-der .selec-img-not{
+                margin-bottom: 40px;
+                height: 30px;
+            }
+            .main-admin-noticias .cont-datos-noticias .form-edicion-noticia .form-der .botonera-edicion-not{
+                display: block;
+                padding-top: 5px;
+            }
+                .main-admin-noticias .cont-datos-noticias .form-edicion-noticia .form-der .botonera-edicion-not .btnagregar, .main-admin-noticias .cont-datos-noticias .form-edicion-noticia .form-der .botonera-edicion-not .btnmodificar, .main-admin-noticias .cont-datos-noticias .form-edicion-noticia .form-der .botonera-edicion-not .btncancelar{
+                    height: 50px;
+                    width: 100%;
+                    margin-bottom: 30px;
+                    border-radius: 10px;
+                    border: none;
+                    font-size: 18px;
+                    box-shadow: 2px 3px 7px #000;
+                }
+                .main-admin-noticias .cont-datos-noticias .form-edicion-noticia .form-der .botonera-edicion-not .btnagregar:hover, .main-admin-noticias .cont-datos-noticias .form-edicion-noticia .form-der .botonera-edicion-not .btnmodificar:hover, .main-admin-noticias .cont-datos-noticias .form-edicion-noticia .form-der .botonera-edicion-not .btncancelar:hover{
+                    box-shadow: none;
+                    transition: 0.5s;
+                }
+                    .main-admin-noticias .cont-datos-noticias .form-edicion-noticia .form-der .botonera-edicion-not .btnagregar{
+                        background-color: rgb(97, 173, 104);
+                    }
+                    .main-admin-noticias .cont-datos-noticias .form-edicion-noticia .form-der .botonera-edicion-not .btnmodificar{
+                        background-color: rgb(226, 210, 120);
+                    }
+                    .main-admin-noticias .cont-datos-noticias .form-edicion-noticia .form-der .botonera-edicion-not .btncancelar{
+                        background-color: rgb(255, 110, 110);
+                    }
+
+.main-admin-noticias .cont-noticias-cargadas{
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+    .main-admin-noticias .cont-noticias-cargadas .table{
+        border: 1px solid #000;
+    }
+    .main-admin-noticias .cont-noticias-cargadas .table .table-titulos-celdas{
+        background-color: rgb(76, 5, 28);
+        height: 50px;
+    }
+    .main-admin-noticias .cont-noticias-cargadas .table td{
+        padding: 20px 0px;
+        text-align: center;
+        border-bottom: 1px solid #000;
+    }
+        .main-admin-noticias .cont-noticias-cargadas .table-id{
+            width: 5%;
+        }
+        .main-admin-noticias .cont-noticias-cargadas .table-fecha{
+            width: 10%;
+        }
+        .main-admin-noticias .cont-noticias-cargadas .table-descripcion{
+            width: 30%;
+            height: 50px;
+            text-align: start;
+            padding-left: 10px;
+        }
+        .main-admin-noticias .cont-noticias-cargadas .table-botonera{
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+            .main-admin-noticias .cont-noticias-cargadas .table-botonera input{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 5px;
+                padding: 5px;
+                width: 80px;
+                border: none;
+                box-shadow: 2px 3px 7px #000;
+            }
+                .main-admin-noticias .cont-noticias-cargadas .table-botonera .table-btnseleccionar{
+                    background-color: rgb(97, 173, 104);
+                }
+                .main-admin-noticias .cont-noticias-cargadas .table-botonera .table-btnborrar{
+                    background-color: rgb(154, 39, 39);
+                    color: #fff;
+                }
+                .main-admin-noticias .cont-noticias-cargadas .table-botonera input:hover{
+                    box-shadow: none;
+                    transition: 0.5s;
+                }
+
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: Qatar2022;
+    src: url(../Qatar2022/Qatar2022Arabic-Bold.ttf);
+}

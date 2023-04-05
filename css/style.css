@@ -1,0 +1,1110 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Qatar2022;
+}
+
+body{
+    background: rgb(159,14,53);
+    background: linear-gradient(52deg, rgba(159,14,53,1) 0%, rgba(70,2,24,1) 100%);
+    background-size: cover;
+    color: #fff;
+    display: grid;
+    grid-area:
+    "header header header"
+    "main main main"
+    "footer footer footer";
+
+    grid-column: auto auto auto;
+    grid-row: auto auto auto;
+}
+
+header{
+    display: flex;
+}
+    header .titulo-web{
+        display: flex;
+        margin: 20px;
+    }
+        header .titulo-web img{
+            height: 200px;
+            vertical-align: middle;
+        }
+        header .titulo-web h1{
+            font-size: 35px;
+            margin-top: 50px;
+            max-width: 50%;
+            line-height: 40px;
+        }
+            header .titulo-web span{
+                font-size: 45px;
+            }
+            header .titulo-web h1 a{
+                text-decoration: none;
+                color: #fff;
+            }
+
+    header .menu{
+        display: flex;
+        margin-top: 50px;
+        margin-right: 70px;
+    }
+        header .menu ul{
+            display: flex;
+            text-decoration: none;
+            list-style: none;
+            
+        }
+
+        header .menu ul li{
+            text-decoration: none;
+            color: #fff;
+            margin: 30px;
+            font-size: 25px;
+            
+        }
+            header .menu ul li a{
+                text-decoration: none;
+                
+            }
+
+a{
+    text-decoration: none;
+}
+
+
+.cuadradito{
+    background-color: rgba(159,14,53,1);
+    height: 20px;
+    width: 20px;
+    margin-top: 37px;
+    margin-right: 10px;
+    margin-left: 10px;
+    display: flex;
+    transform: rotate(45deg);
+}
+
+main{
+    display: flex;
+    margin-bottom: 50px;
+}
+
+    main .texto-main{
+        max-width: 60%;
+        padding-left: 50px;
+        padding-top: 50px;
+    }
+        main .texto-main h1{
+            max-width: 70%;
+            font-size: 50px;
+            line-height: 60px;
+        }
+        main .texto-main span{
+            font-size: 60px;
+        }
+        main .texto-main p{
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+            main .texto-main button, section .cont-texto button{
+                background: none;
+                width: 30%;
+                border: 1px solid #fff;
+                color: #fff;
+                font-size: 20px;
+                margin-top: 20px;
+                border-radius: 50px;
+                display: flex;
+            }
+            main .texto-main .cont-btn, section .cont-texto .cont-btn{
+                padding: 10px;
+                display: flex;
+                margin-left: auto;
+                margin-right: auto;
+            }
+                main .texto-main button a, section .cont-texto button a{
+                    text-decoration: none;
+                    color: #fff;
+                    margin-right: 10px;
+                    margin-left: 10px;
+                }
+                main .texto-main button .cuadradito, section .cont-texto button .cuadradito{
+                    height: 10px;
+                    width: 10px;
+                    margin-top: 10px;
+                    background-color: #fff;
+                }
+
+    main .img-main{
+        max-width: 40%;
+        margin-top: -100px;
+    }
+        main .img-main img{
+            height: 500px;
+        }
+
+section{
+    background-color: rgb(150, 0, 48);
+    height: 500px;
+    width: 100%;
+    display: flex;
+}
+    section .cont-texto{
+            width: 70%;
+    }
+        section .cont-texto h2{
+            margin: 50px;
+            font-size: 75px;
+            max-width: 30%;
+            line-height: 80px;
+        }
+
+        section .cont-texto .cont-cuadraditos{
+            margin-left: 50px;
+            margin-top: -20px;
+            display: flex;
+        }
+            section .cont-texto .cont-cuadraditos .cuadradito-grande, section .cont-texto .cont-cuadraditos .cuadradito-chico{
+                background-color: rgba(70,2,24,1);
+                height: 20px;
+                width: 20px;
+                margin-right: 10px;
+                margin-left: 10px;
+                display: flex;
+                transform: rotate(45deg);
+            }
+            section .cont-texto .cont-cuadraditos .cuadradito-chico{
+                height: 10px;
+                width: 10px;
+            }
+
+        section .cont-texto p{
+            margin-left: 55px;
+            margin-top: 30px;
+            font-size: 20px;
+        }
+        section .cont-texto button{
+            margin-left: 50px;
+            width: 25%;
+            font-size: 16px;
+        }
+            section .cont-texto button .cuadradito{
+                margin-top: 7px;
+            }
+
+    section .cont-ilustracion{
+        width: 30%;
+        border-radius: 100%;
+    }
+        section .cont-ilustracion img{
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            border-radius: 100% 0%;
+        }
+
+
+.section-planteles{
+    background-color: rgb(129, 2, 42);
+    flex-direction: row-reverse;
+}
+    .section-planteles .cont-texto{
+        margin-left: 200px;
+    }
+
+    section .cont-texto button{
+        width: 30%;
+    }
+        .section-planteles .cont-texto button:hover, section .cont-texto button:hover, .texto-main button:hover{
+            background-color: #fff;
+            transition: 0.5s ease-in;
+        }
+            .section-planteles .cont-texto button .cont-btn:hover>a, section .cont-texto button .cont-btn:hover>a, .texto-main button .cont-btn:hover>a, .noticia .cont-texto button:hover>a{
+                    color: rgba(70,2,24,1);
+                    transition: 0.5s ease-in;
+                }
+            .section-planteles .cont-texto button .cont-btn:hover>.cuadradito, section .cont-texto button .cont-btn:hover>.cuadradito, .texto-main button .cont-btn:hover>.cuadradito{
+                background-color: rgba(70,2,24,1);
+                transition: 0.5s ease-in;
+            }
+
+.section-noticias{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 90px auto auto auto;
+    grid-template-areas: "titulo-seccion titulo-seccion"
+                         "noticia1 noticia2"
+                         "noticia1 noticia3";
+}
+    .section-noticias .titulo-seccion, .section-notas .titulo-seccion{
+        margin-left: 50px;
+        margin-top: 30px;
+        display: flex;
+    }
+        .section-noticias .titulo-seccion h2, .section-notas .titulo-seccion h2{
+            font-size: 35px;
+        }
+        .section-noticias .titulo-seccion .cont-cuadraditos, .section-notas .titulo-seccion .cont-cuadraditos{
+            display: flex;
+            margin-top: 15px;
+            margin-left: 15px;
+        }
+        .section-noticias .titulo-seccion .cont-cuadraditos .cuadradito-grande, .section-noticias .titulo-seccion .cont-cuadraditos .cuadradito-chico, .section-notas .titulo-seccion .cont-cuadraditos .cuadradito-grande, .section-notas .titulo-seccion .cont-cuadraditos .cuadradito-chico{
+            background-color: rgba(70,2,24,1);
+            margin-right: 10px;
+            margin-left: 10px;
+            display: flex;
+            transform: rotate(45deg);
+        }
+            .section-noticias .titulo-seccion .cont-cuadraditos .cuadradito-grande, .section-notas .titulo-seccion .cont-cuadraditos .cuadradito-grande{
+                height: 15px;
+                width: 15px;
+            }
+            .section-noticias .titulo-seccion .cont-cuadraditos .cuadradito-chico, .section-notas .titulo-seccion .cont-cuadraditos .cuadradito-chico{
+                height: 10px;
+                width: 10px;
+            }
+
+    .section-noticias .noticia1{
+        grid-area: noticia1;
+        margin-left: 50px;
+        margin-right: 30px;
+        border-right: 1px solid #fff;
+    }
+        .section-noticias .noticia1 .noticia{
+            margin-top: 10%;
+            display: flex;
+        }
+            .section-noticias .noticia1 .noticia img{
+                max-width: 50%;
+                margin-left: 0px;
+                overflow: hidden;
+                border-radius: 10px;
+            }
+            .section-noticias .noticia1 .noticia .cont-texto{
+                margin-left: 20px;
+                margin-right: 30px;
+            }
+                .section-noticias .noticia1 .noticia .cont-texto h3{
+                    font-size: 25px;
+                }
+                .section-noticias .noticia1 .noticia .cont-texto p{
+                    margin: 0px;
+                    margin-top: 20px;
+                    font-size: 15px;
+                }
+                .section-noticias .noticia1 .noticia .cont-texto button{
+                    width: 50%;
+                    margin: 0px;
+                    margin-top: 10px;
+                    padding-left: 15px;
+                }
+                .section-noticias .noticia1 .noticia .cont-texto .cont-cuadraditos{
+                    margin: 0px;
+                    padding: 0px;
+                }
+                    .section-noticias .noticia1 .noticia .cont-texto .cont-cuadraditos .cuadradito-grande, .section-noticias .noticia1 .noticia .cont-texto .cont-cuadraditos .cuadradito-chico{
+                        background-color: #fff;
+                        margin-top: 5px;
+                    }
+                    .section-noticias .noticia1 .noticia .cont-texto .cont-cuadraditos .cuadradito-grande{
+                        height: 8px;
+                        width: 8px;
+                    }
+                    .section-noticias .noticia1 .noticia .cont-texto .cont-cuadraditos .cuadradito-chico{
+                        height: 5px;
+                        width: 5px;
+                    }
+
+
+    .section-noticias .noticia2, .section-noticias .noticia3{
+        grid-area: noticia2;
+        margin-left: 15px;
+    }
+        .section-noticias .noticia2 .noticia, .section-noticias .noticia3 .noticia{
+            display: flex;
+        }
+            .section-noticias .noticia2 .noticia img, .section-noticias .noticia3 .noticia img{
+                max-width: 40%;
+                margin-top: 3%;
+                border-radius: 10px;
+            }
+            .section-noticias .noticia2 .noticia .cont-texto, .section-noticias .noticia3 .noticia .cont-texto{
+                margin-top: 6%;
+                margin-left: 20px;
+                max-width: 40%;
+            }
+                .section-noticias .noticia2 .noticia .cont-texto h4, .section-noticias .noticia3 .noticia .cont-texto h4{
+                    font-size: 20px;
+                }
+                .section-noticias .noticia2 .noticia .cont-texto button, .section-noticias .noticia3 .noticia .cont-texto button{
+                    margin: 0px;
+                    padding: 0px;
+                    padding-left: 7px;
+                    margin-top: 10px;
+                    width: 40%;
+                }
+
+    .section-noticias .noticia3{
+        grid-area: noticia3;
+    }
+
+footer{
+    text-align: center;
+    background-color: rgba(70,2,24,1);
+}
+    footer .social{
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+        footer .social .cont-cuadraditos{
+            display: flex;
+            margin-top: 15px;
+            margin-left: 15px;
+        }
+            footer .social .cont-cuadraditos .cuadradito-chico, footer .social .cont-cuadraditos .cuadradito-grande{
+                background-color: rgba(159,14,53,1);
+                margin-right: 10px;
+                margin-left: 10px;
+                display: flex;
+                transform: rotate(45deg);
+            }
+                footer .social .cont-cuadraditos .cuadradito-grande{
+                    height: 15px;
+                    width: 15px;
+                }
+                footer .social .cont-cuadraditos .cuadradito-chico{
+                    height: 10px;
+                    width: 10px;
+                }
+
+        footer .social .logos{
+            display: flex;
+            margin: 5px 20px;
+        }
+            footer .social .logos img{
+                height: 30px;
+                margin: 0px 10px;
+            }
+
+    footer h4{
+        margin-top: 100px;
+        font-size: 25px;
+    }
+    footer p{
+        margin: 0px 450px;
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+        border-bottom: 1px solid #fff;
+    }
+
+
+
+
+/* Fixture.html */
+
+main .img-main .img-estrellas{
+    margin-left: -30px;
+    margin-bottom: -58px;
+}
+
+.section-grupos{
+    display: block;
+    height: auto;
+}
+    .section-grupos .titulo-seccion, .section-sedes .titulo-seccion, .section-cultura .titulo-seccion, .section-plantillas .titulo-seccion{
+        margin-left: 50px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        display: flex;
+    }
+        .section-grupos .titulo-seccion h2,  .section-sedes .titulo-seccion h2, .section-cultura .titulo-seccion h2, .section-plantillas .titulo-seccion h2{
+            font-size: 35px;
+        }
+
+        .section-grupos .titulo-seccion .cont-cuadraditos,  .section-sedes .titulo-seccion .cont-cuadraditos, .section-cultura .titulo-seccion .cont-cuadraditos, .section-plantillas .titulo-seccion .cont-cuadraditos{
+            display: flex;
+            margin-top: 15px;
+            margin-left: 15px;
+        }
+        .section-grupos .titulo-seccion .cont-cuadraditos .cuadradito-grande, .section-sedes .titulo-seccion .cont-cuadraditos .cuadradito-grande, .section-grupos .titulo-seccion .cont-cuadraditos .cuadradito-chico, .section-sedes .titulo-seccion .cont-cuadraditos .cuadradito-chico, .section-cultura .titulo-seccion .cont-cuadraditos .cuadradito-chico, .section-cultura .titulo-seccion .cont-cuadraditos .cuadradito-grande, .section-grupos .titulo-seccion .cont-cuadraditos .cuadradito-chico, .section-sedes .titulo-seccion .cont-cuadraditos .cuadradito-chico, .section-plantillas .titulo-seccion .cont-cuadraditos .cuadradito-chico, .section-grupos .titulo-seccion .cont-cuadraditos .cuadradito-chico, .section-sedes .titulo-seccion .cont-cuadraditos .cuadradito-chico, .section-plantillas .titulo-seccion .cont-cuadraditos .cuadradito-grande{
+            background-color: rgba(70,2,24,1);
+            margin-right: 10px;
+            margin-left: 10px;
+            display: flex;
+            transform: rotate(45deg);
+        }
+            .section-grupos .titulo-seccion .cont-cuadraditos .cuadradito-grande, .section-sedes .titulo-seccion .cont-cuadraditos .cuadradito-grande, .section-cultura .titulo-seccion .cont-cuadraditos .cuadradito-grande, .section-plantillas .titulo-seccion .cont-cuadraditos .cuadradito-grande{
+                height: 15px;
+                width: 15px;
+            }
+            .section-grupos .titulo-seccion .cont-cuadraditos .cuadradito-chico, .section-sedes .titulo-seccion .cont-cuadraditos .cuadradito-chico, .section-cultura .titulo-seccion .cont-cuadraditos .cuadradito-chico, .section-plantillas .titulo-seccion .cont-cuadraditos .cuadradito-chico{
+                height: 10px;
+                width: 10px;
+            }
+    .section-grupos .cont-grupo{
+        display: flex;
+    }
+    .section-grupos .cont-grupo .grupo{
+        margin-left: 50px;
+        margin-top: 20px;
+        margin-bottom: 70px;
+    }
+        .section-grupos .cont-grupo .grupo h3{
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+        .section-grupos .cont-grupo .grupo table{
+            background-color: rgba(70,2,24,1);
+            width: 40%;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+        }
+            .section-grupos .cont-grupo .grupo table .primera-fila td{
+                font-size: 20px;
+                padding: 10px;
+            }
+            .section-grupos .cont-grupo .grupo table td{
+                width: 30px;
+                padding: 5px;
+            }
+                .section-grupos .cont-grupo .grupo table .seleccion{
+                    font-size: 20px;
+                    padding-left: 10px;
+                }
+            .section-grupos .cont-grupo .grupo table td img{
+                height: 50px;
+                margin-left: 20px;
+            }
+    .section-grupos .cont-grupo .cont-fixture{
+        display: flex;
+        max-width: 60%;
+        margin-top: 35px;
+    }
+        .section-grupos.cont-grupo .cont-fixture .arriba, .section-grupos .cont-grupo .cont-fixture .abajo{
+            display: block;
+            margin-left: 50px;
+        }
+            .section-grupos .cont-grupo .cont-fixture .arriba .fix-seleccion, .section-grupos .cont-grupo .cont-fixture .abajo .fix-seleccion{
+                display: block;
+                margin-left: 40px;
+                margin-top: 40px;
+            }
+                .section-grupos .cont-grupo .cont-fixture .arriba .fix-seleccion .partido, .section-grupos .cont-grupo .cont-fixture .abajo .fix-seleccion .partido{
+                    display: flex;
+                }
+                    .section-grupos .cont-grupo .cont-fixture .arriba .fix-seleccion .partido img, .section-grupos .cont-grupo .cont-fixture .abajo .fix-seleccion .partido img{
+                        height: 50px;
+                        text-align: center;
+                    }
+                    .section-grupos .cont-grupo .cont-fixture .arriba .fix-seleccion .partido p, .section-grupos .cont-grupo .cont-fixture .abajo .fix-seleccion .partido p{
+                        font-size: 15px;
+                        margin-top: 15px;
+                        margin-right: 30px;
+                    }
+
+
+
+/* Sedes.html */
+.menu-sede{
+    width: 100%;
+}
+.main-sede{
+    width: 100%;
+    height: 300px;
+}
+.main-sede .img-main-sede{
+    max-width: 50%;
+    overflow: hidden;
+    margin-bottom: -100px;
+}
+    .main-sede .img-main-sede img{
+        max-width: 100%;
+    }
+
+.section-sedes{
+    display: block;
+    height: auto;
+    max-width: 100%;
+    overflow: hidden;
+}
+    .section-sedes .cont-sedes{
+        display: grid;
+        margin: 0px 50px 50px 50px;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: auto auto;
+        grid-template-areas: "sede1 sede2 sede3 sede4"
+                             "sede5 sede6 sede7 sede8";
+    }     
+   
+    .section-sedes .cont-sedes .sede{
+        height: 200px;
+        width: 290px;
+        background-color: rgba(70,2,24,1);
+        margin: 10px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+        .section-sedes .cont-sedes .sede .texto-frente{
+            position: absolute;
+            height: 200px;
+            width: 290px;
+            z-index: 5;
+            border-radius: 10px;
+        }
+                #lusail{
+                    background-image: url(../img/estadios/lusail.png);
+                    background-size: cover;
+                }
+                #abud{
+                    background-image: url(../img/estadios/abud.png);
+                    background-size: cover;
+                }
+                #khalifa{
+                    background-image: url(../img/estadios/khalifa.png);
+                    background-size: cover;
+                }
+                #educacion{
+                    background-image: url(../img/estadios/educacion.png);
+                    background-size: cover;
+                }
+                #educacion{
+                    background-image: url(../img/estadios/educacion.png);
+                    background-size: cover;
+                }
+                #zumama{
+                    background-image: url(../img/estadios/zumama.png);
+                    background-size: cover;
+                }
+                #binali{
+                    background-image: url(../img/estadios/binali.png);
+                    background-size: cover;
+                }
+                #albayt{
+                    background-image: url(../img/estadios/albayt.png);
+                    background-size: cover;
+                }
+                #alyanub{
+                    background-image: url(../img/estadios/alyanub.png);
+                    background-size: cover;
+                }
+
+        .section-sedes .cont-sedes .sede .texto-fondo{
+            position: absolute;
+            background-color: rgba(70,2,24,1);
+            border-radius: 10px;
+            height: 200px;
+            width: 290px;
+            z-index: 2;
+            display: block;
+        }
+            .section-sedes .cont-sedes .sede .texto-fondo h4{
+                font-size: 25px;
+                margin-left: 25px;
+                margin-top: 35px;
+                max-width: 80%;
+                text-align: center;
+            }
+            .section-sedes .cont-sedes .sede .texto-fondo p{
+                margin-left: 65px;
+                margin-top: 20px;
+            }
+            .section-sedes .cont-sedes .sede .cont-cuadraditos{
+                display: flex;
+                margin-top: 5px;
+                margin-left: 45px;
+            }
+                .section-sedes .cont-sedes .sede  .cont-cuadraditos .cuadradito-chico, .section-sedes .cont-sedes .sede  .cont-cuadraditos .cuadradito-grande{
+                    background-color: #fff;
+                    margin-right: 10px;
+                    margin-left: 10px;
+                    display: flex;
+                    transform: rotate(45deg);
+                }
+                    .section-sedes .cont-sedes .sede  .cont-cuadraditos .cuadradito-grande{
+                        height: 10px;
+                        width: 10px;
+                    }
+                    .section-sedes .cont-sedes .sede  .cont-cuadraditos .cuadradito-chico{
+                        height: 7px;
+                        width: 7px;
+                    }
+
+
+    .section-sedes .cont-sedes .sede:hover .texto-frente{
+        visibility: hidden;
+    }
+
+.section-cultura, .section-nacion{
+    background-color: rgb(129, 2, 42);
+    display: block;
+    height: auto;
+    padding-bottom: 50px;
+
+}
+    .section-cultura .cuerpo-seccion{
+        max-width: 80%;
+        font-size: 20px;
+        margin-left: 50px;
+    }
+        .section-cultura .cuerpo-seccion p{
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+
+.section-info-qatar{
+    background-color: rgb(150, 0, 48);
+    height: auto;
+    padding-bottom: 50px;
+    display: flex;
+    padding-top: 20px;
+}
+    .section-info-qatar .cont-texto{
+        max-width: 60%;
+        margin: 0px 50px;
+    }
+        .section-info-qatar .cont-texto h3{
+            font-size: 25px;
+            margin-left: 50px;
+            margin-right: 50px;
+            margin-top: 20px;
+            border-left: 1px solid #fff;
+            padding-left: 15px;
+        }
+        .section-info-qatar .cont-texto p{
+            font-size: 18px;
+            margin-bottom: -20px;
+        }
+
+    .section-info-qatar .cont-ilustracion{
+        max-width: 40%;
+        margin-top: 40px;
+    }
+        .section-info-qatar .cont-ilustracion img{
+            border-radius: 80% 100%;
+        }
+
+
+.section-impar{
+    flex-direction: row-reverse;
+}
+
+
+/* Planteles.html */
+main .img-main .img-pelota{
+    margin-left: -150px;
+    margin-bottom: -58px;
+    overflow: hidden;
+}
+
+.section-plantillas{
+    height: auto;
+    display: block;
+    margin-top: 50px;
+}
+
+    .section-plantillas .cont-planteles{
+        margin: 20px;
+        margin-left: 50px;
+        max-width: 100%;
+        display: flex;
+    }
+    .section-plantillas .cont-planteles .izquierda, .section-plantillas .cont-planteles .derecha{
+        width: 50%;
+        margin: 0px 30px;
+    }
+        .section-plantillas .cont-planteles .cont-seleccion{
+            display: flex;
+            border-radius: 10px;
+            border: 1px solid #fff;
+            margin-bottom: 20px;
+            padding: 10px;
+        }  
+            .section-plantillas .cont-planteles .cont-seleccion img{
+                max-height: 40px;
+            }
+            .section-plantillas .cont-planteles .cont-seleccion h3{
+                margin-left: 20px;
+                font-size: 25px;
+            }
+            .section-plantillas .cont-planteles .flecha{
+                height: 20px;
+                margin-top: auto;
+                margin-bottom: auto;
+                margin-left: auto;
+            }
+            .section-plantillas .cont-planteles a{
+                text-decoration: none;
+                color: #fff;
+            }
+
+    .section-plantillas .cont-planteles .cont-seleccion:hover{
+        background-color: #fff;
+        transition: 0.5s ease-in;
+    }
+    .section-plantillas .cont-planteles .cont-seleccion:hover>h3{
+        color: rgba(70,2,24,1);
+        transition: 0.5s ease-in;
+    }
+
+/* Planteles.html > planteles/seleccion */
+main .img-main .img-bandera-planteles{
+    margin-left: 50%;
+}
+    main .img-main img{
+        max-height: 450px;
+    }
+
+.section-seleccion{
+    height: auto;
+    display: block;
+}
+.section-seleccion .cont-puesto{
+    height: auto;
+}
+    .section-seleccion .cont-puesto .cont-ilustracion{
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        border-radius: 100% 0%;
+    }
+
+    .section-seleccion .cont-puesto .cont-texto .titulo-puesto{
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        margin-left: 50px;
+        margin-top: 20px;
+    }
+        .section-seleccion .cont-puesto .cont-texto .titulo-puesto h2{
+            font-size: 35px;
+            margin: 0px;
+            margin-right: 20px;
+        }
+    .section-seleccion .cont-puesto .cont-texto .titulo-puesto .cont-cuadraditos{
+        margin: 0px;
+        padding: 0px;
+        margin-top: 25px;
+    }
+        .section-seleccion .cont-puesto .cont-texto .titulo-puesto .cont-cuadraditos .cuadradito-chico, .section-seleccion .cont-puesto .cont-texto .titulo-puesto .cont-cuadraditos .cuadradito-grande{
+            background-color: #fff;
+        }
+
+    .section-seleccion .cont-puesto .cont-texto .cont-jugador{
+        display: flex;
+        margin-bottom: 20px;
+        width: auto;
+    }
+        .section-seleccion .cont-puesto .cont-texto .cont-jugador .cont-img-jugador{
+            height: 150px;
+            width: 150px;
+            overflow: hidden;
+            margin-left: 50px;
+            border-radius: 0px 50px;
+        }
+            .section-seleccion .cont-puesto .cont-texto .cont-jugador .cont-img-jugador img{
+                max-width: 150px;
+            }
+
+        .section-seleccion .cont-puesto .cont-texto .cont-jugador .cont-datos-jugador{
+            margin: 30px;
+            margin-top: 40px;
+        }
+            .section-seleccion .cont-puesto .cont-texto .cont-jugador .cont-datos-jugador h4{
+                font-size: 30px;
+                margin: 0px;
+                padding: 0px;
+            }
+            .section-seleccion .cont-puesto .cont-texto .cont-jugador .cont-datos-jugador p{
+                font-size: 20px;
+                margin: 0px;
+                margin-top: -10px;
+                padding: 0px;
+            }
+
+.section-seleccion .cont-puesto .cont-texto .cont-general-jugadores{
+    display: flex;
+    width: 100%;
+    padding-bottom: 50px;
+}
+    .section-seleccion .cont-puesto .cont-texto .cont-general-jugadores .izquierda{
+        width: 50%;
+        margin-right: 30%;
+    }
+        .section-seleccion .cont-puesto .cont-texto .cont-general-jugadores .izquierda .cont-jugador{
+            width: 500px;
+        }
+    .section-seleccion .cont-puesto .cont-texto .cont-general-jugadores .derecha{
+        width: 50%;
+    }
+        .section-seleccion .cont-puesto .cont-texto .cont-general-jugadores .derecha .cont-jugador{
+            width: 500px;
+        }
+
+.section-seleccion .cont-ct{
+    background-color: rgb(129, 2, 42);
+}
+
+/* Noticias.html */
+
+main .noticia-principal{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 40% auto;
+    grid-template-rows: auto;
+    grid-template-areas: "img-not-main texto-not-main";
+}
+    main .noticia-principal .img-not-main{
+        grid-area: img-not-main;
+        margin-left: 50px;
+    }
+        main .noticia-principal .img-not-main img{
+            max-width: 100%;
+            overflow: hidden;
+            border-radius: 50px;
+        }
+        
+    main .noticia-principal .texto-not-main{
+        grid-area: texto-not-main;   
+        margin-left: 40px;
+        margin-top: 30px;
+        display: flex;
+    }
+        main .noticia-principal .texto-not-main .titulo-not-main{
+            display: block;
+        }
+        main .noticia-principal .texto-not-main h1{
+            font-size: 40px;
+            max-width: 70%;
+        }
+        main .noticia-principal .texto-not-main p{
+            font-size: 18px;
+            max-width: 70%;
+        }
+        main .noticia-principal .texto-not-main button{
+            background: none;
+            border: 1px solid #fff;
+            border-radius: 50px;
+            padding: 10px;
+            width: 30%;
+            margin-top: 20px;
+        }
+        main .noticia-principal .texto-not-main button a{
+            color: #fff;
+        }
+            main .noticia-principal .texto-not-main button:hover{
+                background-color: #fff;
+                transition: 0.5s ease-in;
+            }
+            main .noticia-principal .texto-not-main button:hover>a{
+                color: rgba(70,2,24,1);
+                transition: 0.5s ease-in;
+            }
+
+        main .noticia-principal .texto-not-main .cont-cuadraditos{
+            display: block;
+            margin-right: 40px;
+        }
+        main .noticia-principal .texto-not-main .cont-cuadraditos .cuadradito-grande, main .noticia-principal .texto-not-main .cont-cuadraditos .cuadradito-chico{
+            background-color: #fff;
+        }
+        main .noticia-principal .texto-not-main .cont-cuadraditos .cuadradito-grande{
+            height: 15px;
+            width: 15px;
+            margin-bottom: 20px;
+            transform: rotate(45deg);
+        }
+        main .noticia-principal .texto-not-main .cont-cuadraditos .cuadradito-chico{
+            height: 7px;
+            width: 7px;
+            margin-bottom: 17px;
+            margin-left: 4px;
+            transform: rotate(45deg);
+        }
+
+.section-notas{
+    display: block;
+    height: auto;
+    padding-bottom: 40px;
+}
+    .section-notas .titulo-seccion h2{
+        font-size: 40px;
+    }
+    .section-notas .cont-noticias{
+        display: block;
+    }
+    .section-notas .cont-noticias a{
+        color: #fff;
+    }
+        .section-notas .cont-noticias .noticia{
+            display: flex;
+            margin-left: 50px;
+            padding-left: 20px;
+            margin-right: 50px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #fff;
+        }
+            .section-notas .cont-noticias .noticia .img-noticia{
+                max-width: 60%;
+                overflow: hidden;
+            }
+                .section-notas .cont-noticias .noticia .img-noticia img{
+                    height: 200px;
+                    border-radius: 50px;
+                }   
+            .section-notas .cont-noticias .noticia .text-noticia{
+                margin-left: 30px;
+                max-width: 40%;
+            }
+                .section-notas .cont-noticias .noticia .text-noticia h2{
+                    font-size: 30px;
+                }
+                .section-notas .cont-noticias .noticia .text-noticia p{
+                    max-width: 100%;
+                }
+        .section-notas .cont-noticias .noticia:hover{
+            background-color: #fff;
+            transition: 0.5s ease-in;
+        }
+        .section-notas .cont-noticias .noticia:hover>.text-noticia h2, .section-notas .cont-noticias .noticia:hover>.text-noticia p{
+            color: rgba(70,2,24,1);
+            transition: 0.5s ease-in;
+        }
+        .section-notas .cont-noticias .noticia:hover>.img-noticia img{
+            transform: scale(1.5);
+            transition: 0.5s ease-in;
+        }
+
+/* Noticia completa */
+
+.main-nota{
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    .main-nota .img-noticia{
+        width: 100%;
+    }
+        .main-nota .img-noticia img{
+            width: 100%;
+            opacity: 30%;
+        }
+    .main-nota .titulo-noticia{
+        position: absolute;
+        z-index: 10;
+        max-width: 70%;
+        margin-top: 200px;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+        .main-nota .titulo-noticia h1{
+            font-size: 40px;
+            margin-bottom: 10px;
+            text-shadow: 5px 5px 10px #000;
+        }
+        .main-nota .titulo-noticia p{
+            font-size: 20px;
+            text-shadow: 5px 5px 10px #000;
+        }
+        .main-nota .titulo-noticia .cuadrados{
+            display: flex;
+            margin-top: 30px;
+            justify-content: center;
+        }
+            .main-nota .titulo-noticia .cuadrados .figura-grande{
+                background-color: #fff;
+                height: 20px;
+                width: 20px;
+                margin-right: 30px;
+                transform: rotate(45deg);
+            }
+            .main-nota .titulo-noticia .cuadrados .figura-chica{
+                background-color: #fff;
+                height: 10px;
+                width: 10px;
+                margin-right: 30px;
+                margin-top: 5px;
+                transform: rotate(45deg);
+            }
+
+.desarrollo{
+    height: auto;
+    background-color: #fff;
+    display: block;
+}
+    .desarrollo .cont-desarrollo{
+        width: 100%;
+        margin-top: 30px;
+        color: rgba(70,2,24,1);
+    }
+        .desarrollo .cont-desarrollo p{
+            margin-left: 50px;
+            margin-right: 50px;
+            margin-bottom: 20px;
+            font-size: 18px;
+            line-height: 25px;
+        }
+        .desarrollo .cont-desarrollo h5{
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+            .desarrollo .cont-desarrollo h1, .desarrollo .cont-desarrollo h2, .desarrollo .cont-desarrollo h3, .desarrollo .cont-desarrollo h4, .desarrollo .cont-desarrollo h5{
+                margin-left: 50px;
+            }
+
+        .desarrollo .cont-desarrollo ul{
+            margin-left: 50px;
+            max-width: 90%;
+        }
+            .desarrollo .cont-desarrollo ul li{
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+
+    .desarrollo .cont-cuadraditos{
+        display: flex;
+        margin-left: 50px;
+        margin-top: 30px;
+    }
+        .desarrollo .cont-cuadraditos .cuadradito-chico, .desarrollo .cont-cuadraditos .cuadradito-grande{
+            background-color: rgba(70,2,24,1);
+        }
+        .desarrollo .cont-cuadraditos .cuadradito-chico{
+            height: 10px;
+            width: 10px;
+            transform: rotate(45deg);
+            margin-right: 20px;
+            margin-top: 5px;
+        }
+        .desarrollo .cont-cuadraditos .cuadradito-grande{
+            height: 20px;
+            width: 20px;
+            transform: rotate(45deg);
+            margin-right: 20px;
+        }
+        .desarrollo .cont-cuadraditos-reverse{
+            flex-direction: row-reverse;
+            margin-bottom: 30px;
+            margin-right: 30px;
+        }
+
+    .desarrollo .cont-desarrollo .cont-tweet{
+        height: 500px;
+        width: 500px;
+        overflow: hidden;
+        margin: 30px auto;
+    }
+
+
+@font-face {
+    font-family: Qatar2022;
+    src: url(../Qatar2022/Qatar2022Arabic-Bold.ttf);
+}
